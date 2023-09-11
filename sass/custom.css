@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+/* @import "../node_modules/bootstrap/scss/bootstrap.scss";*/
+.col-img {
+  background-color: rgba(0, 0, 255, 0.695);
+}
+
+.card-img {
+  display: block;
+  mix-blend-mode: multiply;
+}
+
+.h5 {
+  font-weight: 700;
+}
+
+.text-companies {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: red;
+}
+
+.card-title {
+  font-weight: 700;
+}/*# sourceMappingURL=custom.css.map */

@@ -1,0 +1,163 @@
+:root {
+    --Very-dark-blue: hsl(233, 47%, 7%);
+    --Dark-desaturated-blue: hsl(244, 38%, 16%);
+    --Soft-violet: content: '\e896';;
+    --White: hsl(0, 0%, 100%);
+    --Slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Slightly-transparent-white-dos: hsla(0, 0%, 100%, 0.6);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--Very-dark-blue);
+    color: var(--White);
+}
+
+.container {
+    /* margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto; */
+    margin: 1em auto;
+    width: 100%;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--Dark-desaturated-blue);
+    border-radius: 1em;
+    overflow: hidden;
+    max-width: 400px;
+}
+
+.card-col-img {
+    background-image: url('../images/banner1.jpg');
+    background-color: var(--Soft-violet);
+    /* https://developer.mozilla.org/es/docs/Web/CSS/blend-mode */
+    background-blend-mode: multiply;
+    /* backdrop-filter: blur(10px); */
+    /* https://developer.mozilla.org/es/docs/Web/CSS/mix-blend-mode */
+    /* Aquí mezclamos los dos contenidos */
+    /* mix-blend-mode: multiply; */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+    object-fit: fill;
+}
+
+.card-body {
+    /* padding-left: 1em;
+    padding-right: 1em; */
+    padding: 2em 2em;
+    text-align: center;
+}
+
+.card-title { /*h1*/
+    font-weight: 700;
+    font-weight: bold!important;
+    padding-bottom: 1em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    font-size: calc(10px + 1vw)!important;
+	color:black;
+    text-shadow: 0 0 15px whitesmoke, 0 0 15px #4f4f56;
+}
+
+.text-primary{ /* p tit Desarollo Web */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    font-size: calc( 0.5rem + 2vw)!important;
+    color: red;
+    font-style: italic;
+    font-weight: bold!important;
+}
+
+.card-title-morado {/* tit LR  */
+    color: var(--Soft-violet);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    font-size: calc(0.5rem + 1vw)!important;
+	font-weight: bold!important;
+}
+
+.card-text { /*  */
+    color: var(--Slightly-transparent-white);
+}
+
+.footer-container {
+    padding-top: 1em;
+}
+
+.footer-title {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0.3em;
+}
+
+.footer-text {
+    margin-top: 0;
+    color: var(--Slightly-transparent-white-dos);
+    font-size: .8rem;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+/*==============================================================================
+=                              Medias queries                                  =
+===============================================================================*/
+
+@media (min-width: 768px) {
+    .container {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .cards {
+        height: 100vh;
+        align-items: center;
+    }
+
+    .card {
+        display: flex;
+        max-width: 2000px;
+    }
+
+    .card-col-img {
+        width: 400px;
+        order: 2;
+        flex: 1;
+        height: auto;
+    }
+
+    .card-col-body {
+        order: 1;
+        flex: 1;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-title {
+        font-size: 2rem;
+    }
+
+}
+
+
+
+
+
