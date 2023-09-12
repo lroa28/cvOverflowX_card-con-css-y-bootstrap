@@ -91,12 +91,11 @@ Web Development Service.
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Bootstrap-transparent-navbar
-Bootstrap 5.3 - Responsive Transparent Navbar,  Fixed Top on Scroll Web Page
+# Bootstrap
+Bootstrap 5.3 - Page Responsive
 
 <!-- GETTING STARTED -->
 ## Getting Started
